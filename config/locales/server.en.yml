@@ -1,1 +1,3 @@
 en:
+  discourse_digest:
+    daily_digest_title: "Daily Digest for %{date}"

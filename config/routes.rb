@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
-MyPluginModule::Engine.routes.draw do
-  get "/examples" => "examples#index"
+DiscourseDigest::Engine.routes.draw do
   # define routes here
 end
 
-Discourse::Application.routes.draw { mount ::MyPluginModule::Engine, at: "my-plugin" }
+Discourse::Application.routes.draw { mount ::DiscourseDigest::Engine, at: "/discourse-daily-digest" }

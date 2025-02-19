@@ -1,4 +1,23 @@
-TODO_plugin_name:
-  plugin_name_enabled:
+plugins:
+  daily_digest_enabled:
     default: false
+    client: true
+  daily_digest_category_id:
+    default: ""
+    client: true
+  daily_digest_tag:
+    default: "daily-digest"
+    client: true
+  daily_digest_post_time:
+    default: "09:00"
+    client: true
+  daily_digest_sources:
+    type: list
+    default: "hackernews|https://news.ycombinator.com/rss"
+    client: true
+  daily_digest_max_items_per_source:
+    default: 5
+    client: true
+  daily_digest_post_title_template:
+    default: "discourse_digest.daily_digest_title"
     client: true
