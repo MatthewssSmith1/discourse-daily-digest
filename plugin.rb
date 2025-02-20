@@ -7,7 +7,6 @@
 # authors: Matt Smith
 # url: https://github.com/MatthewssSmith1/discourse-daily-digest
 # required_version: 2.7.0
-# depends_on: discourse-ai
 
 enabled_site_setting :daily_digest_enabled
 
@@ -21,7 +20,7 @@ end
 require_relative "lib/discourse_digest/engine"
 
 after_initialize do
-  # Load our dependencies
   require_dependency File.expand_path('../app/jobs/scheduled/generate_daily_digest', __FILE__)
+  require_dependency File.expand_path('../app/services/discourse_digest/openai_service', __FILE__)
   require_dependency File.expand_path('../app/services/discourse_digest/digest_generator', __FILE__)
 end

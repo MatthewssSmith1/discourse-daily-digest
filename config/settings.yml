@@ -8,9 +8,15 @@ plugins:
   daily_digest_tag:
     default: "daily-digest"
     client: true
-  daily_digest_post_time:
-    default: "09:00"
-    client: true
-  newsapi_api_key:
+  news_api_key:
     default: ""
+    client: true
+  openai_api_key:
+    default: ""
+    client: true
+  openai_model:
+    default: "gpt-4o"
+    client: true
+  openai_temperature:
+    default: 0.7
     client: true
