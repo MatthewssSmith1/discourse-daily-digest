@@ -6,7 +6,7 @@ module Jobs
 
     def execute(args)
       unless SiteSetting.daily_digest_enabled
-        Rails.logger.info("Daily digest is disabled, skipping")
+        Rails.logger.warn("Daily digest is disabled, skipping")
         return
       end
 
