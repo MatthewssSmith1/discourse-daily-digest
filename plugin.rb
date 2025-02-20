@@ -10,7 +10,6 @@
 
 enabled_site_setting :daily_digest_enabled
 
-gem 'feedjira', '3.2.4'
 gem 'faraday', '2.12.2'
 
 module ::DiscourseDigest
